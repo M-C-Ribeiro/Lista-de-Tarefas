@@ -1,0 +1,22 @@
+h1 {
+    border-bottom-style: inset;
+    border-color: tomato;
+    font-style: italic;
+    font-variant: small-caps; 
+}
+
+.tarefa-selecionada {
+    color: red;
+    font-style: italic;
+}
+
+.tarefa-normal {
+    color: black;
+}
+
+.feather-10{
+    width: 300px;
+    height: 300px;
+    color: tomato   ;
+}
+

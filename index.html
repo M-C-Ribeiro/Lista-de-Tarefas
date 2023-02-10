@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Lista de Tarefas</title>
+</head>
+<body class="bg-body-secondary">
+    <div class="container-fluid bg-info-subtle">
+        <div class="row">
+            <div class="col-sm-2">
+                <i class="feather-10" data-feather="clipboard" ></i>
+            </div>
+            <div class="col-sm-10" id="divQuadro">
+                <h1>Tarefas do Dia</h1>
+                <form>
+                    <p>
+                        <label for="inTarefa">Tarefa:</label>
+                        <input type="text" style="width: 740px;" class="form-control" id="inTarefa" required autofocus>
+                    </p>
+                    <p>
+                        <!-- valores próximos ao &# são valores unicode https://unicode-table.com/pt/html-entities/ -->
+                        <input type="submit" class="btn btn-primary" value="Adicionar &#10003;"> 
+                        <input type="button" class="btn btn-info" value="Selecionar Abaixo &#8650;" id="btSelecionarAbaixo">
+                        <input type="button" class="btn btn-secondary" value="Selecionar Acima &#8648;" id="btSelecionarAcima">
+                        <input type="button" class="btn btn-danger" value="Retirar Selecionada &#10007;" id="btRetirar">
+                        <input type="button" class="btn btn-success" value="Gravar &#9873;" id="btGravar">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>feather.replace()</script>
+    <script src="lista.js"></script>
+</body>
+</html>
